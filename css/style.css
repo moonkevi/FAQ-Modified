@@ -45,8 +45,18 @@ body {
     font-weight: 750;
 }
 
+/* answer section */
 .answer{
     display: none;
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.answer.active{
+    display: block;
 }
 
 .question{
@@ -57,8 +67,14 @@ body {
     border-bottom: 1px solid rgb(218, 214, 214);
     padding: 15px;
 }
-h3{
+.question h3{
     font-size: 12px;
+    cursor: pointer;
+
+}
+
+.question:hover{
+    color:hsl(292, 16%, 49%);
 }
 .question img{
     width: 20px;
@@ -66,4 +82,20 @@ h3{
 
 .faq-container div :last-of-type{
     border: none;
+}
+
+/* mobile */
+@media (max-width: 480px) {
+body {
+
+    background-image: url("/assets/images/background-pattern-mobile.svg");
+
+    background-repeat: no-repeat;
+
+    background-position: top center;
+
+    background-size: 100% auto;
+    padding: 50px 20px;
+}
+
 }
